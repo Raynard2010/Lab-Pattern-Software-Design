@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="navbar.Master.cs" Inherits="ProjectLab.Views.navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: deepskyblue;
+    }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar">
+                <a id="HomeLink" runat="server" href="~/Views/HomePage.aspx" visible="false">Home</a>
+               <a id="OrderCardLink" runat="server" href="~/Views/OrderCard.aspx" visible="false">OrderCard</a>
+
+                <a id="ManageCardLink" runat="server" href="~/Views/ManageCardPage.aspx" visible="false">Manage Card</a>
+                <a id="ProfileLink" runat="server" href="~/Views/ProfilePage.aspx" visible="false">Profile</a>
+                <a id="TransactionHistoryLink" runat="server" href="~/Views/TransactionHistoryPage.aspx" visible="false">History</a>
+                <a id="TransactionReportLink" runat="server" href="~/Views/ReportPage.aspx" visible="false">Transaction Report</a>
+
+                <asp:Button ID="LogoutBtn" runat="server" Text="Logout" Onclick="LogoutBtn_Click" Visible="false"/>
+                <a id="CartLink" runat="server" href="~/Views/CartPage.aspx" visible="false">Cart</a>
+                <a id="HandleTransactionLink" runat="server" href="~/Views/HandleTransactionPage.aspx" visible="false">Handle Transaction</a>
+
+                <asp:TextBox ID="SearchBox" runat="server" />
+                <asp:Button ID="SearchBtn" runat="server" Text="Search" OnClick="SearchBtn_Click" />
+
+                <asp:Label ID="UsernameLbl" runat="server" Text="Guest"></asp:Label>
+
+
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
