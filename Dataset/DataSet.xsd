@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="transaction_detail" msprop:Generator_RowEvHandlerName="transaction_detailRowChangeEventHandler" msprop:Generator_RowDeletedName="transaction_detailRowDeleted" msprop:Generator_RowDeletingName="transaction_detailRowDeleting" msprop:Generator_RowEvArgName="transaction_detailRowChangeEvent" msprop:Generator_TablePropName="transaction_detail" msprop:Generator_RowChangedName="transaction_detailRowChanged" msprop:Generator_UserTableName="transaction_detail" msprop:Generator_RowChangingName="transaction_detailRowChanging" msprop:Generator_RowClassName="transaction_detailRow" msprop:Generator_TableClassName="transaction_detailDataTable" msprop:Generator_TableVarName="tabletransaction_detail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_UserColumnName="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" type="xs:string" minOccurs="0" />
+              <xs:element name="CardID" msprop:Generator_ColumnPropNameInTable="CardIDColumn" msprop:Generator_ColumnPropNameInRow="CardID" msprop:Generator_UserColumnName="CardID" msprop:Generator_ColumnVarNameInTable="columnCardID" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" type="xs:string" minOccurs="0" />
+              <xs:element name="CardPrice" msprop:Generator_ColumnPropNameInTable="CardPriceColumn" msprop:Generator_ColumnPropNameInRow="CardPrice" msprop:Generator_UserColumnName="CardPrice" msprop:Generator_ColumnVarNameInTable="columnCardPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPrice" msprop:Generator_UserColumnName="TotalPrice" msprop:Generator_ColumnPropNameInTable="TotalPriceColumn" msprop:Generator_ColumnPropNameInRow="TotalPrice" msprop:Generator_ColumnVarNameInTable="columnTotalPrice" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="card" msprop:Generator_RowEvHandlerName="cardRowChangeEventHandler" msprop:Generator_RowDeletedName="cardRowDeleted" msprop:Generator_RowDeletingName="cardRowDeleting" msprop:Generator_RowEvArgName="cardRowChangeEvent" msprop:Generator_TablePropName="card" msprop:Generator_RowChangedName="cardRowChanged" msprop:Generator_UserTableName="card" msprop:Generator_RowChangingName="cardRowChanging" msprop:Generator_RowClassName="cardRow" msprop:Generator_TableClassName="cardDataTable" msprop:Generator_TableVarName="tablecard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CardID" msprop:Generator_ColumnPropNameInTable="CardIDColumn" msprop:Generator_ColumnPropNameInRow="CardID" msprop:Generator_UserColumnName="CardID" msprop:Generator_ColumnVarNameInTable="columnCardID" type="xs:string" minOccurs="0" />
+              <xs:element name="CardName" msprop:Generator_ColumnPropNameInTable="CardNameColumn" msprop:Generator_ColumnPropNameInRow="CardName" msprop:Generator_UserColumnName="CardName" msprop:Generator_ColumnVarNameInTable="columnCardName" type="xs:string" minOccurs="0" />
+              <xs:element name="CardPrice" msprop:Generator_ColumnPropNameInTable="CardPriceColumn" msprop:Generator_ColumnPropNameInRow="CardPrice" msprop:Generator_UserColumnName="CardPrice" msprop:Generator_ColumnVarNameInTable="columnCardPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="CardDesc" msprop:Generator_ColumnPropNameInTable="CardDescColumn" msprop:Generator_ColumnPropNameInRow="CardDesc" msprop:Generator_UserColumnName="CardDesc" msprop:Generator_ColumnVarNameInTable="columnCardDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="CardType" msprop:Generator_ColumnPropNameInTable="CardTypeColumn" msprop:Generator_ColumnPropNameInRow="CardType" msprop:Generator_UserColumnName="CardType" msprop:Generator_ColumnVarNameInTable="columnCardType" type="xs:string" minOccurs="0" />
+              <xs:element name="isFoil" msprop:Generator_ColumnPropNameInTable="isFoilColumn" msprop:Generator_ColumnPropNameInRow="isFoil" msprop:Generator_UserColumnName="isFoil" msprop:Generator_ColumnVarNameInTable="columnisFoil" type="xs:string" minOccurs="0" />
+              <xs:element name="CardscartID" msprop:Generator_ColumnPropNameInTable="CardscartIDColumn" msprop:Generator_ColumnPropNameInRow="CardscartID" msprop:Generator_UserColumnName="CardscartID" msprop:Generator_ColumnVarNameInTable="columnCardscartID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="transaction_header" msprop:Generator_RowEvHandlerName="transaction_headerRowChangeEventHandler" msprop:Generator_RowDeletedName="transaction_headerRowDeleted" msprop:Generator_RowDeletingName="transaction_headerRowDeleting" msprop:Generator_RowEvArgName="transaction_headerRowChangeEvent" msprop:Generator_TablePropName="transaction_header" msprop:Generator_RowChangedName="transaction_headerRowChanged" msprop:Generator_UserTableName="transaction_header" msprop:Generator_RowChangingName="transaction_headerRowChanging" msprop:Generator_RowClassName="transaction_headerRow" msprop:Generator_TableClassName="transaction_headerDataTable" msprop:Generator_TableVarName="tabletransaction_header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_UserColumnName="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" type="xs:string" minOccurs="0" />
+              <xs:element name="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_UserColumnName="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_UserColumnName="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_UserColumnName="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="transaction_detail_Card" msdata:parent="transaction_detail" msdata:child="card" msdata:parentkey="CardID" msdata:childkey="CardID" msprop:Generator_UserParentTable="transaction_detail" msprop:Generator_UserChildTable="card" msprop:Generator_RelationVarName="relationtransaction_detail_Card" msprop:Generator_ChildPropName="GetcardRows" msprop:Generator_UserRelationName="transaction_detail_Card" msprop:Generator_ParentPropName="transaction_detailRow" />
+      <msdata:Relationship name="transaction_header_transaction_detail" msdata:parent="transaction_header" msdata:child="transaction_detail" msdata:parentkey="TransactionID" msdata:childkey="TransactionID" msprop:Generator_UserParentTable="transaction_header" msprop:Generator_UserChildTable="transaction_detail" msprop:Generator_RelationVarName="relationtransaction_header_transaction_detail" msprop:Generator_ChildPropName="Gettransaction_detailRows" msprop:Generator_ParentPropName="transaction_headerRow" msprop:Generator_UserRelationName="transaction_header_transaction_detail" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
